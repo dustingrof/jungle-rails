@@ -1,18 +1,20 @@
 <section class="cart-show">
 
+  <%# If not cart, display message to direct users to homepage %>
+  <% if !@enhanced_cart %>
+  <header class="page-header">
+    <h3>Looks like your cart is empty..</h3>
+    <p>Please visit the <a href="/">home page</a> to start browsing and add items to your cart.</p>
+  </header>
+  <% end %>
+
+  <%# Condition to check if cart has items %>
+  <% if @enhanced_cart %>
+
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
 
-  <% if !@enhanced_cart %>
-    <h3>Looks like your cart is empty..</h3>
-    <p>Please visit the <a href="/">home page</a> to start browsing and add items to your cart.</p>
-  <% end %>
-
-
-
-  <%# Condition to check if cart has items %>
-  <% if @enhanced_cart %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
