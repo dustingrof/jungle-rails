@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   get 'static_pages/help'
   get 'static_pages/faq'
   get 'static_pages/about'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
