@@ -2,21 +2,22 @@
   <header class="page-header">
     <h1>Login</h1>
   </header>
-
+<%# used this as example for styling https://codingpackets.com/blog/rails-6-forms-with-bootstrap-5-styling/ %>
   <div class="from-group">
     <%= form_tag '/login' do %>
       <div class="card">
         <div class="card-body">
-          <div class="row">
-            <div class="col">
+
+            <div class="mb-3">
               <label class="form-label mt-3" for="user[email]">Email</label>
-              <%= text_field_tag :email %>
+              <%= text_field_tag(:email,"#{}", class:'form-control', placeholder: 'Email Address' ) %>
             </div>
-            <div class="col">
+            <div class="mb-3">
               <label class="form-label mt-3" for="user[password]">Password</label>
-              <%= password_field_tag :password %>
+              <%# not sure if i need something in that empty curlybraces below for data binding%>
+              <%= password_field_tag(:password,"#{}", class:'form-control', placeholder: 'Email Address' ) %>
             </div>
-          </div>
+
           <div class="my-3">
             <%= submit_tag "Submit", class: "btn btn-primary" %>
           </div>
