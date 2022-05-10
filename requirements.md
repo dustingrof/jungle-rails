@@ -7,26 +7,26 @@
 
 #### Feature: Admin Categories
 
-- [ ] Major: Admin users can list and create new categories
-- [ ] Major: Admins can add new products using the new category
+- [x] Major: Admin users can list and create new categories
+- [x] Major: Admins can add new products using the new category
 - [ ] Major: Restful routes (`resources`) should be used, and there should be no extra, unused routes exposed
 - [ ] Bonus: All admin controllers inherit from `Admin::BaseController` (or similarly named) abstract controller, containing the authentication filter
 
 #### Feature: User Authentication
 
-- [ ] Major: As a Visitor I can go to the registration page from any page in order to create an account
-- [ ] Major: As a Visitor I can sign up for a user account with my e-mail, password, first name and last name
-- [ ] Major: As a Visitor I can sign in using my e-mail and password
-- [ ] Major: As a User I can log out from any page
+- [x] Major: As a Visitor I can go to the registration page from any page in order to create an account
+- [x] Major: As a Visitor I can sign up for a user account with my e-mail, password, first name and last name
+- [x] Major: As a Visitor I can sign in using my e-mail and password
+- [x] Major: As a User I can log out from any page
 - [ ] Major: As a User I cannot sign up with an existing e-mail address (uniqueness validation)
 - [ ] Major: Passwords are not stored as plain text in the database. Instead, `has_secure_password` is used in the User model, leveraging the `bcrypt` gem
 
 #### Enhancement: Order Details Page
 
-- [ ] Major: The order page contains items, their image, name, description, quantities and line item totals
-- [ ] Major: The final amount for the order is displayed
-- [ ] Minor: The email that was used to place the order is displayed
-- [ ] Minor: As a Visitor I can place an order (i.e. without logging in and therefore without an e-mail address). The original functionality from the inherited code (even though it is not realistic) should therefore not be suppressed.
+- [x] Major: The order page contains items, their image, name, description, quantities and line item totals
+- [x] Major: The final amount for the order is displayed
+- [x] Minor: The email that was used to place the order is displayed
+- [x] Minor: As a Visitor I can place an order (i.e. without logging in and therefore without an e-mail address). The original functionality from the inherited code (even though it is not realistic) should therefore not be suppressed.
 
 #### Bug: Missing Admin Security
 
@@ -35,11 +35,11 @@
 
 #### Bug: Checking Out with Empty Cart
 
-- [ ] Major: When the cart is empty and the user goes to the carts#show page, instead of displaying the contents and a stripe checkout button, display a friendly message about how it is empty and link to the home page
+- [x] Major: When the cart is empty and the user goes to the carts#show page, instead of displaying the contents and a stripe checkout button, display a friendly message about how it is empty and link to the home page
 
 ## Git
 
-- [ ] Minor: The git commit history should have multiple commits and reasonable commit messages. There should be good use of branching and merging for each feature.
+- [x] Minor: The git commit history should have multiple commits and reasonable commit messages. There should be good use of branching and merging for each feature.
 
 ## Stretch Features
 

@@ -6,9 +6,6 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find params[:id]
-    def sold_out?
-      quantity < 1
-    end
   end
 
 end
