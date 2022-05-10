@@ -10,7 +10,7 @@ class Product < ApplicationRecord
   validates :category, presence: true
 
   def sold_out?
-      quantity < 1
-    end
+    quantity < 1
+  end
 
 end
