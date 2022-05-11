@@ -9,7 +9,7 @@
 
 - [x] Major: Admin users can list and create new categories
 - [x] Major: Admins can add new products using the new category
-- [ ] Major: Restful routes (`resources`) should be used, and there should be no extra, unused routes exposed
+- [x] Major: Restful routes (`resources`) should be used, and there should be no extra, unused routes exposed
 - [ ] Bonus: All admin controllers inherit from `Admin::BaseController` (or similarly named) abstract controller, containing the authentication filter
 
 #### Feature: User Authentication
@@ -18,8 +18,8 @@
 - [x] Major: As a Visitor I can sign up for a user account with my e-mail, password, first name and last name
 - [x] Major: As a Visitor I can sign in using my e-mail and password
 - [x] Major: As a User I can log out from any page
-- [ ] Major: As a User I cannot sign up with an existing e-mail address (uniqueness validation)
-- [ ] Major: Passwords are not stored as plain text in the database. Instead, `has_secure_password` is used in the User model, leveraging the `bcrypt` gem
+- [x] Major: As a User I cannot sign up with an existing e-mail address (uniqueness validation)
+- [x] Major: Passwords are not stored as plain text in the database. Instead, `has_secure_password` is used in the User model, leveraging the `bcrypt` gem
 
 #### Enhancement: Order Details Page
 
@@ -30,7 +30,7 @@
 
 #### Bug: Missing Admin Security
 
-- [ ] Major: User must enter HTTP auth login/password to access admin functionality
+- [x] Major: User must enter HTTP auth login/password to access admin functionality
 - [ ] Bonus: Should ideally be implemented in an abstract top-level class for admin controllers (e.g., `Admin::BaseController` which the other concrete admin controllers inherit)
 
 #### Bug: Checking Out with Empty Cart
@@ -45,7 +45,7 @@
 
 #### Automated Tests
 
-- [ ] The automated tests are not required for the project to be submitted.
+- [x] The automated tests are not required for the project to be submitted.
 
 #### Feature: Product Rating
 

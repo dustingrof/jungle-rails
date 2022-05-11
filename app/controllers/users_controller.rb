@@ -9,7 +9,9 @@ def create
     session[:user_id] = user.id
     redirect_to '/'
   else
-    redirect_to '/signup'
+    flash[:danger] = 'Invalid email/password combination'
+    render 'new'
+    # redirect_to '/signup'
   end
 end
 

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  namespace :admin do
-    get 'categories/index'
-  end
+  # namespace :admin do
+  #   get 'categories/index'
+  # end
   get 'about/index'
-  get 'static_pages/help'
-  get 'static_pages/faq'
-  get 'static_pages/about'
+  # get 'static_pages/help'
+  # get 'static_pages/faq'
+  # get 'static_pages/about'
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
