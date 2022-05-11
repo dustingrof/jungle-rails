@@ -1,4 +1,4 @@
-describe('Jungle App', () => {
+describe('Home Page Tests', () => {
   beforeEach(() => {
     cy.visit('/');
   });
